@@ -29,18 +29,20 @@ function play()
     SET variabel ordBok = [..., ..., ...]; // Innehåller ALLA ord i det engelska språket
     SET variabel startOrd till "FOUR";
     SET variabel slutOrd till "FIVE";
+    SET variabel bytBokstav till användarinput
     SET variabel ord till användarinput;
 
-    if(ordet som skrivs in inte innehåller ordBok)
+    if(ordet som skrivs in inte finns i ordBok)
         PRINT "Ordet finns inte i det engelska språket"
     end if
 
-
+    if(bokstav byts)
+        byt bokstav
+    end if
 end function
 
 function isOneLetterApart(wordOne, wordTwo)
     SET variabel diffCount till 0;
-        
 
     return diffCount === 1; // returnerar sant om endast en bokstav ändrats, annars falskt
 end function
